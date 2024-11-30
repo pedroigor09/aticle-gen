@@ -1,0 +1,262 @@
+/* Centralizar a página e dar um fundo leve */
+body, html {
+  height: 100%;  /* Garante que o body ocupe toda a altura da tela */
+  margin: 0;     /* Remove a margem padrão */
+  display: flex; /* Usa o Flexbox para centralizar */
+  flex-direction: column;  /* Organiza os elementos em coluna */
+  justify-content: flex-start;  /* Alinha ao início da tela */
+  align-items: center;      /* Alinha horizontalmente ao centro */
+  background-color: #ffffff; /* Cor de fundo branca */
+  overflow: hidden; /* Esconde a rolagem para a animação */
+}
+
+/* Estilização das Bolinhas de Neve */
+.snowflakes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.snowflake {
+  position: absolute;
+  top: 50px;
+  color: #ffffff; /* Cor branca para a neve */
+  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #000; /* Efeito de neon preto */
+  font-size: 1.2em;
+  will-change: transform;
+  animation: fall 30s linear infinite, drift 5s ease-in-out infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(600vh);
+  }
+}
+
+@keyframes drift {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10vw);
+  }
+}
+
+/* Variando o tempo e a posição inicial das bolinhas */
+.snowflake:nth-of-type(1) {
+  left: 10%;
+  animation-delay: 0s, 0s;
+}
+
+.snowflake:nth-of-type(2) {
+  left: 20%;
+  animation-delay: 2s, 1s;
+}
+
+.snowflake:nth-of-type(3) {
+  left: 30%;
+  animation-delay: 4s, 0.5s;
+}
+
+.snowflake:nth-of-type(4) {
+  left: 40%;
+  animation-delay: 6s, 2.5s;
+}
+
+.snowflake:nth-of-type(5) {
+  left: 50%;
+  animation-delay: 8s, 1s;
+}
+
+.snowflake:nth-of-type(6) {
+  left: 60%;
+  animation-delay: 10s, 3.5s;
+}
+
+.snowflake:nth-of-type(7) {
+  left: 70%;
+  animation-delay: 12s, 0s;
+}
+
+.snowflake:nth-of-type(8) {
+  left: 80%;
+  animation-delay: 14s, 2s;
+}
+
+.snowflake:nth-of-type(9) {
+  left: 90%;
+  animation-delay: 16s, 3s;
+}
+
+.snowflake:nth-of-type(10) {
+  left: 15%;
+  animation-delay: 18s, 4s;
+}
+
+.snowflake:nth-of-type(11) {
+  left: 25%;
+  animation-delay: 20s, 5s;
+}
+
+.snowflake:nth-of-type(12) {
+  left: 35%;
+  animation-delay: 22s, 6s;
+}
+
+.snowflake:nth-of-type(13) {
+  left: 45%;
+  animation-delay: 24s, 7s;
+}
+
+.snowflake:nth-of-type(14) {
+  left: 55%;
+  animation-delay: 26s, 8s;
+}
+
+.snowflake:nth-of-type(15) {
+  left: 65%;
+  animation-delay: 28s, 9s;
+}
+
+.snowflake:nth-of-type(16) {
+  left: 75%;
+  animation-delay: 30s, 10s;
+}
+
+.snowflake:nth-of-type(17) {
+  left: 85%;
+  animation-delay: 32s, 11s;
+}
+
+
+
+/* Outros estilos mantidos */
+.logo-container {
+  display: flex;
+  justify-content: center;  /* Centraliza a logo horizontalmente */
+  margin-bottom: 20px;      /* Espaçamento entre a logo e o card */
+  margin-top: 20px;         /* Adiciona espaço no topo para subir a logo */
+}
+
+.logo {
+  width: 400px;
+  padding: 0px;
+  margin: 10px;
+}
+
+/* Card com bordas arredondadas e sombra */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 80%; /* Agora o card ocupa 80% da largura da tela */
+  height: 400px;
+  max-width: 700px; /* Limita o máximo a 700px, mas ele pode ser menor se a tela for pequena */
+  margin: 0 auto; /* Centraliza o card horizontalmente */
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(22, 37, 249, 0.5), /* Efeito de sombra suave */
+              0 0 20px rgba(22, 37, 249, 0.4), /* Sombra adicional para o brilho */
+              0 0 30px rgba(22, 37, 249, 0.3), /* Aumenta o brilho */
+              0 0 40px rgba(22, 37, 249, 0.2); /* Efeito de brilho mais forte */
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease-in-out; /* Suaviza a transição do brilho */
+}
+
+/* Efeito de brilho neon ao passar o mouse */
+.search-container:hover {
+  box-shadow: 0 0 10px rgba(22, 37, 249, 1), /* Brilho mais intenso */
+              0 0 20px rgba(22, 37, 249, 0.8),
+              0 0 30px rgba(22, 37, 249, 0.7),
+              0 0 50px rgba(22, 37, 249, 0.6);
+}
+
+.input-container {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-container label {
+  position: absolute;
+  top: -25px;
+  left: 10px;
+  font-size: 14px;
+  color: #f44336;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding-left: 5px; /* Ajustando o espaçamento */
+}
+
+.input-container input {
+  width: 100%;
+  padding: 20px 15px; /* Aumentando o padding para separar o texto */
+  border: 2px solid transparent;
+  border-radius: 30px; /* Bordas arredondadas */
+  background-color: #cecece; /* Fundo escuro */
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-container input::placeholder {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.input-container input:focus {
+  border: 2px solid #f44336;
+  background-color: #444; /* Fundo mais escuro ao focar */
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -25px;
+  left: 5px;
+  font-size: 12px;
+  color: #f44336;
+}
+
+button {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #f44336; /* Cor vermelha para o botão */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #f44336, 0 0 10px #f44336, 0 0 20px #f44336, 0 0 40px #f44336;
+  text-shadow: 0 0 5px #f44336, 0 0 10px #f44336;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 0 10px #f44336, 0 0 20px #f44336, 0 0 30px #f44336, 0 0 40px #f44336;
+  transform: scale(1.1); /* Aumenta um pouco o tamanho ao passar o mouse */
+}
+
+button:focus {
+  outline: none;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}

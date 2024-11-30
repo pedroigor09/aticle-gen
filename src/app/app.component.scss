@@ -1,0 +1,24 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between; /* Espaça os itens */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  padding: 0 20px; /* Adiciona espaçamento horizontal */
+}
+
+.toolbar-logo {
+  flex: 1; /* Logo fica à esquerda */
+}
+
+.logo {
+  height: 70px; /* Ajuste o tamanho da logo */
+}
+
+.toolbar-links {
+  display: flex; /* Exibe os links de forma horizontal */
+  gap: 15px; /* Adiciona um espaço entre os links */
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: white; /* Ajusta a cor dos links */
+}
