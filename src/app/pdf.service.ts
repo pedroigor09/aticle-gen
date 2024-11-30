@@ -6,11 +6,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class PdfService {
+  private baseUrl = 'https://articlegen-b423a2069478.herokuapp.com'; // URL do backend no Heroku
+
   constructor(private http: HttpClient) {}
 
   generatePdf(subject: string, theme: string): Observable<Blob> {
     // Enviar requisição GET para gerar o PDF
-    return this.http.get(`http://localhost:8080/download?subject=${subject}&theme=${theme}`, {
+    return this.http.get(`${this.baseUrl}/download?subject=${subject}&theme=${theme}`, {
       responseType: 'blob', // Espera receber o PDF como um arquivo binário
     });
   }
