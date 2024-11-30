@@ -7,12 +7,13 @@ body, html {
   justify-content: flex-start;  /* Alinha ao início da tela */
   align-items: center;      /* Alinha horizontalmente ao centro */
   background-color: #ffffff; /* Cor de fundo branca */
-  overflow: hidden; /* Esconde a rolagem para a animação */
+  overflow-x: hidden; /* Esconde a rolagem horizontal */
+  position: relative; /* Adiciona position relative para suporte às bolinhas fixas */
 }
 
 /* Estilização das Bolinhas de Neve */
 .snowflakes {
-  position: fixed;
+  position: fixed; /* Fixa o contêiner */
   top: 0;
   left: 0;
   width: 100%;
@@ -23,18 +24,18 @@ body, html {
 }
 
 .snowflake {
-  position: absolute;
-  top: 50px;
+  position: absolute; /* Absoluta dentro do contêiner fixo */
+  top: 0; /* Inicia do topo */
   color: #ffffff; /* Cor branca para a neve */
   text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #000; /* Efeito de neon preto */
   font-size: 1.2em;
   will-change: transform;
-  animation: fall 30s linear infinite, drift 5s ease-in-out infinite;
+  animation: fall 10s linear infinite, drift 5s ease-in-out infinite;
 }
 
 @keyframes fall {
   to {
-    transform: translateY(600vh);
+    transform: translateY(100vh); /* Cai até a parte inferior da tela */
   }
 }
 
@@ -132,7 +133,6 @@ body, html {
   left: 85%;
   animation-delay: 32s, 11s;
 }
-
 
 
 /* Outros estilos mantidos */
