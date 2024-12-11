@@ -18,7 +18,7 @@ Este projeto demonstra a implementação de uma aplicação Angular para geraç�
 <br>
 
 <p align="center">
-  <img alt="calendario da copa" src="https://imgur.com/SnAmim5.png" width="100%">
+  <img alt="calendario da copa" src="https://i.imgur.com/LZOkfzD.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
