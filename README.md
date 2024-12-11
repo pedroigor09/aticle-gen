@@ -12,7 +12,7 @@ Este projeto demonstra a implementação de uma aplicação Angular para geraç�
 </p>
 
 <p align="center">
-  <img alt="License" src="https://miro.medium.com/v2/resize:fit:1104/1*S2HaWob-b1tBahBoyIv38g.gif">
+  <img alt="License" src="https://payu.in/blog/wp-content/uploads/2019/01/Blog-Cover.gif">
 </p>
 
 <br>
