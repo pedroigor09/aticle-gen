@@ -1,27 +1,56 @@
-# AticleGen
+<h1 align="center"> Article Gen: front-End Implementation </h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+<p align="center">
+Este projeto demonstra a implementação de uma aplicação Angular para geração de PDFs personalizados. A aplicação permite ao usuário especificar um assunto e um tema, e gerar um PDF personalizado com base nesses parâmetros, utilizando um deploy no VERCEL.
+</p>
 
-## Development server
+<p align="center">
+  <a href="#-tecnologias">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">License</a>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<p align="center">
+  <img alt="License" src="https://miro.medium.com/v2/resize:fit:1104/1*S2HaWob-b1tBahBoyIv38g.gif">
+</p>
 
-## Code scaffolding
+<br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<p align="center">
+  <img alt="calendario da copa" src="https://imgur.com/SnAmim5.png" width="100%">
+</p>
 
-## Build
+## 🚀 Tecnologias
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The project was developed using the following technologies:
 
-## Running unit tests
+- Angular
+- TypeScript
+- HTML
+- SCSS
+- Node.js
+- Vercel
+## 💻 Project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+🛠️ <h3>Funcionalidades do Front-End:<h3>
 
-## Running end-to-end tests
+Este projeto implementa a interface de usuário para a geração de PDFs, permitindo que os usuários especifiquem um assunto e um tema. A aplicação faz requisições HTTP ao backend para gerar e baixar o PDF.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+🚀 <h3>Descrição da Aplicação:<h3>
 
-## Further help
+A aplicação front-end é construída com Angular, proporcionando uma experiência interativa e responsiva. Utiliza serviços para se comunicar com o backend e gerenciar a lógica de geração de PDFs.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🔖 Layout
+
+🤩 Prints/Models of the project clicking here:[HERE](https://imgur.com/a/RNmzhZv).<br>
+⛏️ Linkedin Post: [HERE](https://www.linkedin.com/posts/pedroigorcc_tech-java-angular-activity-7270847500322840576-TCh3?utm_source=share&utm_medium=member_desktop).<br>
+📲 Video in Linkedin: [HERE](https://www.linkedin.com/posts/pedroigorcc_tech-java-angular-activity-7270847500322840576-TCh3?utm_source=share&utm_medium=member_desktop).
+
+## :memo: Licença
+
+This project is licensed under the MIT license.
+
+---
+
+Made with ♥ by Pedro Igor, currently studying Software Engineering/Computer Science.
